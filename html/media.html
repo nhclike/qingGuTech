@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap-3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/finance.css"/>
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .active:hover{
+            background:#ddd;
+            cursor:pointer;
+        }
+
+
+        @media screen and (min-width: 992px){
+
+            .xfs_01{
+                border:1px solid #ddd;
+            }
+            .flk{
+                width:0!important;
+                height: 0!important;
+                border: 25px solid #337AB7;
+                border-top-color: transparent;
+                border-radius: 50%;
+                cursor:pointer;
+                position:relative;
+                left:80px;
+            }
+
+            .flk05{
+                display: block!important;
+            }
+            .flk06{
+                display:none!important;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--/***1.页面头部***/-->
+<header id="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header ">
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="../images/55373f35248dcc_02.png"/>
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html"><span class="glyphicon glyphicon-home" style="letter-spacing:
+												 5px;"></span>首 页
+								</a></li>
+								<li><a href="service.html">业务介绍</a></li>
+								<li  class="current"><a href="media.html">清谷视角</a></li>
+								<li><a href="qgschool.html">清谷学院</a></li>
+								<li><a href="cooperate.html">联盟合作</a></li>
+								<li><a href="recruit.html">招贤纳士</a></li>
+								<li><a href="aboutus.html">关于我们</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!--/***2.轮播图片以及侧边栏***/-->
+<div id="sliderAndCaidan">
+    <!--/***2.1轮播图片***/-->
+    <div class="nav-1">
+        <div id="car1" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <!--轮播区域-->
+            <div class="carousel-inner">
+                <!--具体轮播项-->
+                <!--<div class="item active">
+                    <img src="../images/3.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="../images/7.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="../images/1.jpg"/>
+                </div>-->
+                <div class="item active">
+                    <img src="../images/2.jpg"/>
+                </div>
+               <!-- <div class="item">
+                    <img src="../images/6.jpg"/>
+                </div>-->
+            </div>
+            <!-- 左右方向 -->
+            <a href="#car1" class="carousel-control left" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#car1" class="carousel-control right" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <!-- 增加导航圆点 -->
+            <ul class="carousel-indicators hidden-xs    ">
+                <li class="active" data-target="#car1" data-slide-to="0"></li>
+                <li data-target="#car1" data-slide-to="1"></li>
+                <li data-target="#car1" data-slide-to="2"></li>
+                <li data-target="#car1" data-slide-to="3"></li>
+                <li data-target="#car1" data-slide-to="4"></li>
+            </ul>
+        </div>
+    </div>
+    <!--/***2.2侧边滚动菜单***/-->
+   <!-- <div id="caidan">
+        <button class="hidden-xs btn3">MENU <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+        <ul class="active-1 hidden-xs">
+            <li><a href="#">集团介绍</a></li>
+            <li><a href="#">集团文化</a></li>
+            <li><a href="#">发展历程</a></li>
+            <li><a href="#">组织架构</a></li>
+            <li><a href="#">集团环境</a></li>
+            <li><a href="#" style="font-weight: bold"><span class="glyphicon glyphicon-home" style="letter-spacing:
+            10px;  margin-left: -20px;
+"></span>首&nbsp;&nbsp;&nbsp;页</a></li>
+            <li>
+                <a >
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+            </li>
+        </ul>
+    </div>-->
+</div>
+<section>
+    <div id="mian" >
+        <div class="row">
+            <h3>COMPANY NEWS</h3>
+            <b>集 团</b>
+            <b class="animated infinite swing">动 态</b>
+        </div>
+        <div class="row">
+            <div id="mian-box" class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 ">
+                <img src="../images/56dff404b7d16.jpg">
+                <div class="hidden-xs ">
+                    <button class="btn1"><span class="glyphicon glyphicon-chevron-left"></span></button>
+                    <button class="btn2"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+                <div class="writing hidden-xs animated rotateInUpLeft">
+                    <img src="../images/reddot.png">
+                    <div class="wz show">
+                        <p>集团总裁宣布：旗下清谷科技金融获批基金代销牌照</p>
+                        <span>导语：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。</span>
+                    </div>
+                    <div class="wz">
+                        <p>集团总裁宣布2：旗下清谷科技金融获批基金代销牌照</p>
+                        <span>导语2：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。</span>
+                    </div>
+                    <div class="wz">
+                        <p>集团总裁宣布3：旗下清谷科技金融获批基金代销牌照</p>
+                        <span>导语3：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。</span>
+                    </div>
+                </div>
+                <div class="writing1 col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <p>集团总裁宣布：旗下清谷科技金融获批基金代销牌照</p>
+                    <span>导语：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。</span>
+                </div>
+                <div class="writing1 col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <p>集团总裁宣布2：旗下清谷科技金融获批基金代销牌照</p>
+                    <span>导语2：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。</span>
+                </div>
+                <div class="writing1 col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <p>集团总裁宣布3：旗下清谷科技金融获批基金代销牌照</p>
+                    <span>导语3：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/*****荣誉*****/-->
+<hr style="background: #DDD">
+<div id="fas">
+
+    <div class="row">
+        <div id="hover" class="col-md-12 text-center">
+            <p> HONOR  AND  QUALIFICATION</p>
+            <div id="honer-01" >
+                <b class="animated flash">荣誉</b>
+                <a class="animated infinite flipInX" style="display:inline-block;" >资质</a>
+            </div>
+        </div>
+    </div>
+    <!--/***主要部分***/-->
+    <div id="smart" class="row ">
+        <div class="col-md-3 col-md-offset-2  ">
+            <img src="../images/55da73551d166.jpg"  class="img-responsive">
+        </div>
+        <div id="smart-02" class="col-md-3 xfs_01">
+            <p style="color: #e4393c">互联网金融产业信用联盟理事会</p>
+            <i>财聚财富，富贵勇传--清谷科技财富将坚持专注于以客观公正的角度，为客户麟选或者量身订制最佳的投资的品种和最优的财富管理方案，全新帮助客户实现财源广进，富贵广进。</i>
+            <h5>(清谷科技财富曾用名“九源财富”)</h5>
+            <div id="smart-03"></div>
+        </div>
+        <div  id="smart-05" class="col-md-3 xfs_01">
+            <a href="#" id="next" class="btn btn-primary ">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class="glyphicon glyphicon-chevron-up"></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <ul id="btn" class="list-unstyled">
+                <li class="active">清谷科技商学院</li>
+                <li>互联网金融业信用联盟理事会</li>
+                <li  class="hidden-lg hidden-md ">互联网发展史</li>
+                <li class="hidden-lg hidden-md">互联网的成功</li>
+            </ul>
+            <a  href="#" id="prev" class="btn btn-primary ">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class="glyphicon glyphicon-chevron-down"></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <div class=" animated wobble flk"></div>
+        </div>
+    </div>
+</div>
+
+<!--/***4.页面尾部***/-->
+<div id="footer-father">
+    <nav class="navbar navbar-default">
+        <div class="collapse navbar-collapse clearfix">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="aboutus.html">关于我们</a></li>
+                <li><a href="service.html">业务介绍</a></li>
+                <li><a href="media.html">清谷视角</a></li>
+                <li><a href="qgschool.html">清谷学院</a></li>
+                <li><a href="recruit.html">招贤纳士</a></li>
+            </ul>
+        </div>
+</nav>
+</div>
+<footer id="footer2">
+    <div id="footer2-inner">
+        <p class="pull-left">COPYRIGHT © 2016   清谷科技控股集团有限公司  沪ICP备13234678号</p>
+        <p class="powered pull-right">Powered by 17sucai.com</p>
+    </div>
+
+
+</footer>
+
+
+<!--JavaScript文档-->
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootlint.js"></script>
+<!--余培英导航条 谭鹏飞做了一点点-->
+<script>
+    //bootlint.showLintReportForCurrentDocument([]);
+    //侧边滚动导航事件
+    $(".btn3").click(function(){
+        $(this).next().slideToggle(300);
+    });
+    $(".active-1>li:last-child").click(function(){
+        $(this).parent().slideUp(300);
+    });
+</script>
+
+<script type="text/javascript">
+    $(window).scroll(function(){
+        // $("#caidan").css("display","block")
+        if($(window).scrollTop()>=111){
+            $("#caidan").slideDown("1000");
+            $("#header").slideUp("300");
+
+        }else{
+            $("#caidan").slideUp("1000");
+            $("#header").slideDown("300");
+        }
+    })  
+ </script>
+
+<!-- 张良特集团动态JS -->
+<script>
+    //bootlint.showLintReportForCurrentDocument([]);
+
+    $(".btn1").click(function(){
+        var a=$("div .show").prev().hasClass("wz");
+        console.log(a);
+        if(a===true) {
+            $("div .show").removeClass("show").prev("div .wz").addClass("show").fadeOut(300);
+        }else{
+            $("div .show").removeClass("show");
+            $(".wz:last").addClass("show").fadeOut(300);
+        }
+        for(var i=1;i<=2;i++){
+            $(".writing img").fadeToggle(300);
+        }
+    });
+    $(".btn2").click(function(){
+        var a=$("div .show").next().hasClass("wz");
+        console.log(a);
+        if(a===true){
+            $("div .show").removeClass("show").next("div .wz").addClass("show").fadeOut(300);
+        }else{
+            $("div .show").removeClass("show");
+            $(".wz:first").addClass("show").fadeOut(300);
+        }
+        for(var i=1;i<=2;i++){
+            $(".writing img").fadeToggle(300);
+        }
+    });
+</script>
+
+
+<!-- 方利凯荣誉资质JS-->
+<script src="../js/financing.js"></script>
+<script>
+
+    $("#fas #smart-05 li").on("mouseenter",function(){
+        $("#fas #smart-05 li").addClass("active")
+    }).on("mouseleave",function(){
+        $("#fas #smart-05 li").removeClass("active")
+    });
+
+
+    $("#fas #btn").on("click","li:nth-child(1)",function(){
+        console.log(this);
+        $("#fas #smart-02 p:nth-child(1)").html("清谷科技商学院").fadeOut().fadeIn().fadeOut().fadeIn();
+        $("#fas #smart-02 i").html("商学院都是好学生呀！富贵勇传--清谷科技财富将坚持专注于以客观公正的角度，为客户麟选商学院都是好学生呀！富贵勇传--清谷科技财富将坚持专注于以客观公正的角度，为客户麟选")
+
+    });
+    $("#fas #btn").on("click","li:nth-child(2)",function(){
+        console.log(this);
+        $("#fas #smart-02 p:nth-child(1)").html("互联网金融产业信用联盟理事会").fadeOut().fadeIn().fadeOut().fadeIn();
+        $("#fas #smart-02 i").html("财聚财富，富贵勇传--清谷科技财富将坚持专注于以客观公正的角度，为客户麟选或者量身订制最佳的投资的品种和最优的财富管理方案，全新帮助客户实现财源广进，富贵广进。")
+    });
+    $("#fas #btn").on("click","li:nth-child(3)",function(){
+        console.log(this);
+        $("#fas #smart-02 p:nth-child(1)").html("互联网发展史").fadeOut().fadeIn().fadeOut().fadeIn();
+        $("#fas #smart-02 i").html("技财富将坚持专注于以客观公正的角度，为客户麟选或者量身订制最佳的投资的品种和最优的财富管理方案，全新帮助客户实现财源广进，富贵广进。")
+    });
+    $("#fas #btn").on("click","li:nth-child(4)",function(){
+        console.log(this);
+        $("#fas #smart-02 p:nth-child(1)").html("互联网的成功").fadeOut().fadeIn().fadeOut().fadeIn();
+        $("#fas #smart-02 i").html("技财富将坚持专注于以客观公正的角度，为客户麟选或者量身订制最佳的投资的品种和最优的财富管理方案，全新帮助客户实现财源广进，富贵广进。")
+    });
+
+    $("#fas #next ").on("click",function(e){
+        e.preventDefault();
+        console.log(this);
+        /*$("li:nth-child(1)").replaceWith()*/
+        $("#fas #btn").append($("#fas #btn li:nth-child(1)"));
+    });
+    $("#fas #prev").on("click",function(e){
+        e.preventDefault();
+        console.log(this);
+        $("#fas #btn").prepend($("#fas #btn li:nth-child(4)"));
+    })
+    $("#fas .flk").on("click",function(){
+        console.log(this);
+        $("#fas #btn li:nth-child(n)").addClass("flk05");
+        $("#fas .flk").addClass("flk06");
+    });
+
+
+</script>
+</body>
+</html>

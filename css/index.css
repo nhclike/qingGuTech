@@ -1,0 +1,426 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 12px;
+  color: #333;
+  background-color: #fff;
+}
+a:hover,
+a,
+a:focus {
+  text-decoration: none ;
+}
+ul {
+  list-style: none;
+}
+h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+h4 {
+  color: #0c65bb;
+  font-weight: bold;
+  font-size: 2rem;
+}
+h3 span {
+  color: #0c65bb;
+  display: inline-block;
+}
+.more {
+  position: absolute;
+  bottom: -2%;
+  right: 10%;
+  width: 100px;
+  height: 40px;
+  background: #333;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+}
+.about {
+  position: absolute;
+  top: 30px;
+  right: -24px;
+  background-color: #fff;
+  width: auto;
+}
+#main {
+  margin-top: 20px;
+}
+#main .row {
+  margin: 0px;
+}
+#intr div {
+  font-weight: bolder;
+  text-align: center;
+}
+#intr div h3:first-child {
+  color: #A4A3A3;
+}
+#intr div h3:last-child p {
+  position: relative;
+  top: -50px;
+}
+#invest {
+  text-align: center;
+}
+#invest img {
+  width: auto;
+}
+#invest .hides {
+  opacity: 0;
+}
+#invest .shows {
+  opacity: 1;
+}
+#invest > .invest {
+  border-top: 1px dashed #AAAAAA;
+  border-bottom: 1px dashed #AAAAAA;
+  margin-bottom: 0;
+}
+#invest > .invest li {
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+}
+#invest > .invest li:nth-child(2) {
+  border-right: 1px dashed #AAAAAA;
+  border-left: 1px dashed #AAAAAA;
+}
+#invest .list li {
+  width: 15px;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 50% ;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+}
+#invest .list .active {
+  background: #0c65bb;
+}
+#invest h6 {
+  width: 100%;
+  color: #AAAAAA;
+  text-shadow: 0 0 3px;
+  text-wrap: none;
+  overflow: hidden;
+  transition: all .5s linear;
+}
+#persepctive {
+  background: url("../images/001bg1.jpg");
+  background-size: cover;
+}
+#persepctive div:first-child {
+  text-align: center;
+}
+#persepctive div:first-child h3:first-child {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+#persepctive div:first-child h3:last-child {
+  margin-top: 0;
+}
+#persepctive .img {
+  padding: 25px 10px 25px 25px;
+}
+#persepctive .img img {
+  height: 243px;
+}
+#persepctive .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 25px 25px 25px 10px;
+}
+#persepctive .text > div:not(.modal-text) {
+  padding: 5px;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#persepctive .text > div:not(.modal-text) span {
+  font-weight: bold;
+  font-size: 40px;
+}
+#persepctive .text > div:not(.modal-text) p {
+  text-align: left;
+  margin-bottom: 0;
+  padding: 5px 0 0 5px;
+  overflow: hidden;
+  text-indent: 10px;
+  cursor: pointer;
+}
+#persepctive .modal-text {
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/1-1.jpg");
+  background-size: 200%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+#persepctive .modal-text p {
+  cursor: auto ;
+  text-indent: 20px;
+  line-height: 30px;
+}
+#persepctive .modal-text button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  margin: 10px;
+  z-index: 10;
+}
+#persepctive .modal-text .close:hover {
+  background-color: #ddd;
+}
+#company {
+  text-align: center;
+  margin-top: 30px;
+  background: url("../images/001bg3.jpg") no-repeat 104% 97%;
+}
+#company div:first-child {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#company div:first-child h3:first-child {
+  color: #AAAAAA;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+#company div:first-child h3:nth-child(2) {
+  margin-top: 0;
+}
+#company div:first-child p {
+  color: #AAAAAA;
+  letter-spacing: 10px;
+  line-height: 30px;
+}
+#company .img {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+#company .img img {
+  border-radius: 50%;
+  border: 1px solid #AAAAAA;
+  position: relative;
+  width: 30%;
+}
+#company .img .prev {
+  left: 12%;
+  z-index: 1;
+  opacity: 0.7;
+}
+#company .img .next {
+  right: 12%;
+  opacity: 0.7;
+}
+#company .img .mid {
+  z-index: 2;
+  box-shadow: 0 0 3px #333;
+}
+#company .img > ul {
+  padding: 10px 0;
+  overflow: hidden;
+  display: flex;
+}
+#company .img > ul li {
+  position: relative;
+}
+#company > p {
+  margin-top: 20px;
+  color: #aaa;
+  text-align: left;
+  text-indent: 10px;
+}
+#company #next,
+#company #prev {
+  font-size: 5rem;
+  font-weight: 100;
+  margin: 0px;
+  color: #aaa;
+}
+#company #next span,
+#company #prev span {
+  padding: 10px;
+  border-radius: 30px;
+}
+#company #next span:hover,
+#company #prev span:hover {
+  background: rgba(100, 100, 100, 0.5);
+  color: #fff;
+}
+#company #next span:active,
+#company #prev span:active {
+  background: rgba(33, 33, 33, 0.6);
+  color: #fff;
+}
+#institute {
+  min-height: 100px;
+  background: url("../images/001bg2.jpg") 0 10px;
+  background-size: 98%;
+}
+#institute .title:first-child {
+  text-align: center;
+}
+#institute .title:first-child h3:first-child {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+#institute .title:first-child h3:last-child {
+  margin-top: 0;
+}
+#institute .btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 10px 20px 0 0px ;
+}
+#institute .img {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 20px;
+}
+#institute .img .text {
+  width: 100%;
+  display: none;
+}
+#institute .img .text p {
+  text-indent: 10px;
+}
+#institute .bg {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 768px) {
+  #institute .btnLeft {
+    position: absolute;
+    right: 10%;
+    top: 0px;
+  }
+}
+#about {
+  background: url("../images/bg-top.png") no-repeat 55% -3%;
+  background-size: 72%;
+  margin: 30px 0 !important;
+}
+#about > div {
+  text-indent: 5px;
+  margin-top: 20px;
+  line-height: 25px;
+  padding: 20px 50px 0px 0px;
+  background: url("../images/bg-bot.png") no-repeat 30% 102%;
+  background-size: 104%;
+}
+#about .aboutLeft img {
+  width: 93%;
+}
+#about .aboutTxt {
+  padding-top: 20px;
+}
+#about1 {
+  margin: 30px 0 !important;
+}
+#about1 > div {
+  line-height: 25px;
+  padding: 20px 50px 0px 0px;
+  background-size: 104%;
+}
+@media screen and (max-width: 767px) {
+  #persepctive .img,
+  #persepctive .text {
+    padding: 15px 35px 7px 35px;
+  }
+  #persepctive .img img,
+  #persepctive .text img {
+    height: auto;
+  }
+  #about {
+    background: none;
+  }
+  #about > div {
+    background: none;
+    margin-left: 30px;
+    border: 2px solid #333;
+  }
+  #about > div .about {
+    padding-bottom: 20px;
+    top: 5%;
+    right: -25px;
+  }
+  #invest .invest {
+    border: none;
+    border-bottom: 1px dotted #AAAAAA;
+  }
+  #invest .invest li {
+    border-top: 1px dotted #AAAAAA;
+  }
+  #invest .invest li:nth-child(2) {
+    border-right: none;
+    border-left: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #about {
+    background-position: 48% -5%;
+    right: -19%;
+  }
+  #about .aboutLeft img {
+    width: 70%;
+  }
+  #about .about {
+    top: 25px;
+    right: -27px;
+  }
+  div.aboutTxt {
+    padding-bottom: 30px;
+  }
+  #prev,
+  #next {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #about1 {
+    background: #ffffff;
+  }
+  #about1 > div {
+    background: #ffffff;
+    border: 2px solid #333;
+  }
+  #about1 > div .about {
+    padding-bottom: 20px;
+    right: -4%;
+  }
+  #about1 > div p {
+    text-indent: 15px;
+    padding-left: 10px;
+  }
+  #about1 > div p > img {
+    width: 30%;
+    float: left;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #company {
+    background: none;
+    margin-top: 30px;
+  }
+  #about .aboutTxt {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #about .about {
+    padding-bottom: 20px;
+    right: -7%;
+  }
+}

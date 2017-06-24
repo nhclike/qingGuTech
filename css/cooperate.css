@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+/*标题*/
+#bg_titles{
+  text-align: center;
+  padding: 5em auto;
+  border-bottom: 1px dashed #9A9A9A;
+  color:rgb(164, 163, 163);
+  width: 100%;
+}
+#bg_titles h2{
+  font-variant:small-caps;
+}
+#bg_titles p{
+  font-size: 2.5rem;
+  color:#000;
+  font-weight: bold;
+}
+#bg_titles p a{
+  color:rgb(12, 101, 187);
+  text-decoration: none;
+}
+
+/*大屏幕下面菱形样式设置*/
+.container #shape {
+  margin: 8em auto;
+  overflow: hidden;
+  width: 60em;
+  height: 28em;
+  position: relative;
+}
+.container #shape ul {
+  margin-bottom: 0;
+  margin-right: 0;
+  position: absolute;
+  top: -9em;
+  left: 9em;
+  width: 42em;
+  height: 42em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transform: rotate(45deg);
+}
+.container #shape ul li {
+  width: 8em;
+  height: 8em;
+  margin: 0.2em;
+  border: 1px solid #ddd;
+  position: relative;
+  transition: all .5s;
+}
+.container #shape ul li dl {
+  z-index: -2;
+  transform: rotate(-45deg);
+  margin: 0;
+  position: absolute;
+  top: 11%;
+  left: 20%;
+  width: 55%;
+  text-align: center;
+  font-size: .8em;
+}
+.container #shape ul li dl dd {
+  text-align: center;
+  min-height: 1em;
+}
+
+/*小屏幕下菱形样式*/
+.container #sm-shape {
+  max-width: 98%;
+  position: relative;
+  display: inline-block;
+  margin:5em auto;
+}
+.container #sm-shape ul {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.container #sm-shape ul li {
+  width: 10em;
+  height: 10em;
+  position:relative;
+  transition: all .5s;
+  clip-path: url("#clip-shape");
+  -webkit-clip-path: url("#clip-shape");
+}
+
+.container #sm-shape ul li img {
+  margin: 1.9em auto;
+}
+/*小屏幕下按钮样式*/
+.container #more{
+  border:1px solid #ddd;
+  background:rgb(12, 101, 187);
+  margin: 0em auto;
+  position: relative;
+  bottom: 1.5em;
+}
+
+
+.show{
+  display: block !important;
+}
+.hide{
+  display: none !important;
+}
+
+.active {
+  border: 1px solid rgb(12, 101, 187);
+  box-shadow: 1px 1px 10px rgb(12, 101, 187);
+}
+.rotate {
+  -webkit-animation: scroll .5s;
+  animation: scroll .5s;
+  background: rgb(12, 101, 187) ;
+}
+@keyframes scroll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*超大屏幕*/
+@media screen and (min-width: 1200px){
+  #shape{
+    display: block;
+  }
+  #shape li[class=p1],li[class=p2],[class=p3],li[class=p6],[class=p7],li[class=p11],[class=p15],li[class=p19],[class=p20],li[class=p23],[class=p24],li[class=p25]{  visibility: hidden;  }
+  #sm-shape{
+    display: none !important;
+  }
+  #more{
+    display: none;
+  }
+}
+
+/*大型屏幕*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  #shape{
+    display: block;
+  }
+  #shape li[class=p1],li[class=p2],[class=p3],li[class=p6],[class=p7],li[class=p11],[class=p15],li[class=p19],[class=p20],li[class=p23],[class=p24],li[class=p25]{  visibility: hidden;  }
+  #sm-shape{
+    display: none !important;
+  }
+  #more{
+    display: none;
+  }
+}
+
+/*中小屏幕*/
+@media screen and (min-width:768px) and (max-width:991px){
+
+  /*#sm-shape li[class=p4]{  opacity: 0 !important;  }*/
+  #sm-shape li[class=p10],li[class=p4]{  visibility: hidden ;  }
+  #sm-shape{
+    display: block;
+  }
+  #shape{
+    display: none;
+  }
+  #more{
+    display: none;
+  }
+}
+/*小屏幕*/
+@media screen and (max-width:768px){
+  #sm-shape{
+    display: block;
+  }
+  #shape{
+    display: none;
+  }
+  #more{
+    display: block;
+  }
+  #sm-shape li:not(.hid){
+    display: none;
+  }
+}

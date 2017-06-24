@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 12px;
+}
+
+#mian{
+      margin: 4rem auto; 
+}
+#mian .row:nth-child(1) {
+  text-align: center;
+}
+#mian h3 {
+  color: #ADA9B7;
+  margin: 0;
+}
+#mian b:nth-child(2) {
+  font-size: 28px;
+}
+#mian b:nth-child(3) {
+  font-size: 28px;
+  color: #0C64BC;
+  display: inline-block;
+}
+#mian-box {
+  position: relative;
+  padding: 0;
+}
+#mian-box > img {
+  width: 100%;
+}
+#mian-box button {
+  background-color: #0C64BB;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+}
+#mian-box .writing1 {
+  background: rgba(170, 0, 7, 0.9);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  #mian-box button:nth-child(1) {
+    position: absolute;
+    left: -45px;
+    top: 150px;
+  }
+  #mian-box button:nth-child(2) {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+  }
+  .writing img {
+    float: left;
+    height: 200px;
+  }
+  .writing div {
+    width: 300px;
+    height: 200px;
+    float: left;
+    background: rgba(170, 0, 7, 0.9);
+    color: #fff;
+    padding: 20px;
+  }
+  .writing {
+    position: absolute;
+    right: -130px;
+    top: 80px;
+  }
+  .writing .wz {
+    display: none;
+    line-height: 20px;
+        
+  }
+}
+.writing{
+  box-shadow: 0px 0px 15px #000;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #mian-box button:nth-child(1) {
+    position: absolute;
+    left: -45px;
+    top: 105px;
+  }
+  #mian-box button:nth-child(2) {
+    position: absolute;
+    left: 0px;
+    top: 105px;
+  }
+  .writing img {
+    float: left;
+    height: 150px;
+  }
+  .writing div {
+    width: 200px;
+    height: 150px;
+    float: left;
+    background: rgba(170, 0, 7, 0.9);
+    color: #fff;
+    padding-top: 10px;
+  }
+  .writing {
+    position: absolute;
+    right: -105px;
+    top: 50px;
+  }
+  .writing .wz {
+    display: none;
+    line-height: 20px;
+  }
+}

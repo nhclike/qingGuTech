@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+#fas #hover p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #a4a3a3;
+  margin-top: 2rem;
+  border: none;
+}
+#fas #hover a {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0c65bb;
+}
+#fas #hover b {
+  font-size: 2em;
+}
+#fas #hover #honer-01 {
+  margin: 10px 0;
+}
+#fas #smart {
+  margin: 45px 0;
+}
+#fas #smart #btn {
+  width: 186px;
+  padding-top: 10px;
+}
+#fas #smart #btn li {
+  font-size: 0.9em;
+  padding: 3px;
+}
+#fas #smart #smart-02 {
+  margin-left: -15px;
+  height: 193px;
+  border: 1px solid #ddd;
+  border-right: none;
+  position: relative;
+
+}
+#fas #smart #smart-02 p {
+  padding: 10px;
+}
+#fas #smart #smart-02 i {
+  display:inline-block;
+  font-style: normal;
+  line-height: 2.5rem;
+  height:7rem;
+  overflow: hidden;
+}
+#fas #smart #smart-02 h5 {
+  margin: 10px 0;
+}
+#fas #smart #smart-02 #smart-03 {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  top: 25px;
+  left: -11px;
+  transform: rotate(45deg);
+}
+#fas #smart-05 {
+  border: 1px solid #ddd;
+  height: 193px;
+  width: 233px;
+  border-left: none;
+  overflow: hidden;
+}
+#fas #smart-05 li {
+  width: 217px;
+}

@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+dl,
+dd {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+/*LISA修改*/
+.recruit{
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+}
+/*.carousel-indicators{*/
+  /*width: inherit;*/
+/*}*/
+ /*img{*/
+  /*margin-top:0;*/
+/*}*/
+
+/*LISA修改*/
+
+
+.recruit .sub-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding-bottom: 20px;
+}
+.recruit .sub-title p {
+  text-align: center;
+  color: rgb(164, 163, 163);
+}
+/*.recruit .sub-title p + p {*/
+  /*color: #333;*/
+  /*font-size: 20px;*/
+  /*font-weight: bold;*/
+/*}*/
+.recruit .sub-title p + p span {
+  color: rgb(12, 101, 187);
+}
+.recruit .swiper-container {
+  position: relative;
+  height: 100px;
+  font-size: 0;
+}
+.recruit .swiper-container .swiper-slide {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 100px;
+  background: #fff;
+  border-right: 1px solid #cacaca;
+}
+.recruit .swiper-container .swiper-slide .show-detail {
+  /* color: #aaa; */
+	color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  /* background-color: rgba(228,228,228,.7); */
+   background-color:rgb(12, 101, 187);
+   
+}
+.recruit .swiper-container .swiper-slide p + p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.recruit .swiper-container .swiper-slide p {
+  position: relative;
+  font-size: 14px;
+}
+.recruit .swiper-container .swiper-slide p a {
+  color: #333;
+  text-decoration: none;
+}
+.recruit .swiper-container .swiper-slide p a:hover {
+  color: #3c8cd2;
+}
+.recruit .swiper-container .swiper-slide p .plus {
+  float: right;
+  display: inline-block;
+  margin-top: 42px;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  line-height: 12px;
+  text-align: center;
+  background-color: #9c9897;
+}
+.recruit .swiper-container .swiper-slide p .plus:hover {
+  color: #fff;
+  background-color: #3c8cd2;
+}
+.recruit .details-container {
+  position: absolute;
+  z-index: 2;
+  margin-top: -100px;
+}
+.recruit .details-container .detail {
+  position: absolute;
+  display: none;
+  bottom: -100px;
+  background-color: #eee;
+}
+.recruit .details-container .detail > p {
+  margin-top: 0;
+  padding: 0 15px !important;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0C64BD;
+}
+.recruit .details-container .detail > div {
+  padding: 15px;
+  overflow-y: auto;
+}
+.recruit .details-container .detail > div p {
+  line-height: 2.5rem;
+}
+.recruit .pagination-container {
+  height: 30px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+.recruit .pagination-container .glyphicon {
+  cursor: pointer;
+  font-size: 14px;
+}
+.recruit .pagination-container .glyphicon + .glyphicon {
+  margin-left: 10px;
+}
+.to-top {
+  top: auto;
+  left: auto;
+  right: 50px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none !important;
+  border-radius: 30px;
+  background-color: #337ab7;
+}

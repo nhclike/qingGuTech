@@ -1,0 +1,156 @@
+*{box-sizing: border-box;}
+img{
+    width:100%;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    font-size: 12px;
+    color:#333;
+
+}
+
+/******************************************/
+#section{
+    width: 61%;
+    margin:2rem auto;
+}
+@media screen and (max-width:768px){
+    #section{
+        width: 95%;
+    }
+}
+@media screen and (max-width:992px){
+    #section{
+        width: 85%;
+    }
+}
+#chin {
+    color:#1B2525;
+    text-align:center;
+    font-size:2rem;
+}
+#chin span{
+    font-size:2rem;
+    color:rgb(164, 163, 163);
+}
+#chin p{
+    font-weight: bold;
+    text-align:center;
+}
+#chin p b{
+    color:rgb(12, 101, 187);
+}
+#section-mian{
+   text-align: center;
+     /*line-height: 1.5rem;*/
+    line-height:2.5rem;
+}
+/*************************************/
+#super-star{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #ddd;
+}
+#stars{
+    width: 61%;
+    margin:2rem auto;
+}
+@media screen and (max-width:768px){
+    #stars{
+        width: 95%;
+    }
+}
+@media screen and (max-width:992px){
+    #stars{
+        width: 85%;
+    }
+}
+#stars p{
+    text-align: center;
+}
+#stars>p:first-child{
+    padding-top: 2rem;
+    text-align:center;
+    font-size:2rem;
+    color:rgb(164, 163, 163);
+}
+#stars>p:nth-child(2){
+   font-size: 2rem;
+    font-weight: bold;
+}
+#stars>p>b{
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgb(12, 101, 187);
+}
+/*************************/
+#ststf1>p{
+    margin-top: .5rem;
+}
+#ststf1>span{
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+#star1>img{
+    width: 20%;
+    height: 20%;
+}
+#ststf1{
+    width:70%;
+    height: 70%;
+}
+#ststf1{
+    margin:4rem  auto;
+}
+/*******************/
+#ststf2>p{
+    margin-top: .5rem;
+}
+#ststf2>span{
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+#star2>img{
+    margin: 2rem auto;
+    width: 20%;
+    height: 20%;
+}
+#ststf2{
+    width:70%;
+    height: 70%;
+}
+#ststf2 {
+    margin: 4rem auto;
+}
+    /*******************/
+#ststf3>p{
+    margin-top:.5rem;
+}
+#ststf3>span{
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+#star3>img{
+    margin: 2rem auto;
+     width: 20%;
+     height: 20%;
+ }
+#ststf3{
+    width:70%;
+    height: 70%;
+}
+#ststf3{
+    margin:6rem  auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

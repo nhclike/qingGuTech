@@ -1,0 +1,295 @@
+/*Í¨ÓÃÑùÊ½*/
+    *{box-sizing: border-box;}
+    /* img{
+        width:100%;
+    } */
+    body{
+        font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+        font-size: 12px;
+        color:#333;
+        background: #fff;
+        position: relative;
+
+    }
+
+/***1.Ò³ÃæÍ·²¿***/
+    #header{
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+    #header .container-fluid{
+        width: 80%;
+        margin: auto;
+    }
+    #header .navbar-default{
+        background: #fff;
+    }
+    #header .navbar-brand{
+        height:111px;
+    }
+    #header .navbar{
+        border-radius: 0;
+    }
+    #header .navbar-right a{
+        line-height:5.7;
+    }
+    #header .collapse ul li{
+        /*margin:-10px;*/
+    }
+    #header .collapse ul li:hover{
+        background: #ddd;
+    }
+    #header .collapse ul li:hover a{
+        color:#0C64BB;
+    }
+    #header .navbar-default,#footer .navbar-default{
+        border:none;
+        background-color: rgba(44,62,80,.95);;
+
+    }
+
+    #header .current a{
+        background: #0C64BB;
+        color:#fff;
+        padding: 10px 12px;
+        box-shadow: 0 0 2px #0C64BB;
+        border-radius: 2px;
+    }
+    #header .collapse ul li.current:hover a {
+        color:#fff;
+    }
+
+    #header .nav>li>a{
+        padding: 10px 7px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    #header a {
+    color:rgb(236, 240, 241);
+;
+}
+/***2.Ò³ÃæÖ÷Ìâ***/
+    /*1.1¼¯ÍÅ½éÉÜ*/
+
+/***3.Ò³ÃæÎ²²¿***/
+    #footer .navbar-default{
+        background: #fff;
+    }
+    #footer-box{
+        padding:0;
+    }
+    #footer-box ul{
+        list-style:none;
+         display:flex;
+         justify-content: space-between;
+         margin-top: 7px;
+     }
+    #footer-father{
+         background-color: rgba(44,62,80,.95);
+     }
+    #footer-father .navbar-default{
+        background-color: rgba(4, 4, 4, 0);
+        border:none;
+    }
+    #footer-father .navbar{
+        width: 80%;
+        margin: auto;
+
+    }
+    #footer-box>ul li a{
+        text-decoration: none;
+        color:#655F61;
+
+    }
+    #footer .navbar-brand{
+        height:111px;
+    }
+    #footer .navbar-right a{
+        line-height:5.7;
+    }
+    #footer,#footer2-inner{
+        width: 80%;
+        margin:auto;
+        overflow: hidden;
+    }
+    #footer2{
+        border-top: 1px solid #63666A;
+    }
+    #footer2 .container-fluid>.row>div:first-child{
+        margin:0;
+    }
+    #footer2{
+        background-color: rgba(44,62,80,.95);
+    }
+    #footer2 p{
+        color: rgba(221, 221, 221, 0.85098);
+        margin:0;
+        font-size: 12px;
+    }
+    #footer2-inner{
+        padding:10px;
+    }
+    #footer-father .navbar-nav>li>a:hover{
+        color:#0C64BB;
+    }
+    .navbar-default .navbar-nav > li > a {
+    /* color: #cac7c7; */
+    color: rgb(236, 240, 241)
+;
+}
+
+/***4.²à±ß¹ö¶¯²Ëµ¥****/
+    #sliderAndCaidan {
+        position: relative;
+            /*height: 514px;*/
+    overflow: hidden;
+        margin-top: -2px;
+    }
+    #sliderAndCaidan img{
+        height:110% !important;
+        width: 100% !important;
+        margin-top: 112px;
+    }
+    #caidan {
+        position: fixed;
+        z-index: 50;
+        right: 1.5rem;
+        top: 460px;       
+        /*top:0;*/
+        box-shadow: 0 0 8px #000;
+        opacity: 0.9;
+        /*display: none;*/
+    }
+    #caidan ul.active-1 {
+        list-style: none;
+        padding-left: 0;
+        background: #0C64BB;
+        margin-bottom: 0;
+    }
+    #caidan ul.active-1 li {
+        width: 130px;
+        /*height: 40px;*/
+        text-align: center;
+        line-height: 40px;
+        font-size: 1.2em;
+        z-index: 15;
+        border-top: none ;
+    }
+    #caidan ul.active-1 li a {
+        color: #fff;
+        /*width: 85%;*/
+        display: block;
+        height: 40px;
+        margin: auto;
+        /*border-bottom: 1px solid #2C7ADD;*/
+            padding: 0;
+    }
+    #caidan ul.active-1 li a:hover{
+        border:none;
+    }
+    #caidan ul.active-1 li:hover,#caidan ul.active-1 li.on {
+        background-color:#094179 ;
+    }
+    #caidan ul.active-1 li:hover a {
+        color: #dddddd;
+    }
+    #caidan ul.active-1 li > a:hover {
+        text-decoration: none;
+    }
+    #caidan button {
+        background-color: #0C64BB;
+        border: none;
+        color: #dddddd;
+        width: 130px;
+        height: 50px;
+        font-size: 1.5em;
+        border-bottom: 2px solid #2C7ADD;
+    }
+    .carousel-control{
+        top:111px;
+    }
+    #caidan ul.active-1 li:last-child{
+        border-top: 2px solid #2C7ADD;
+    }
+
+
+//侧边栏导航条滚动监听
+#caidan ul.active-1 li
+#caidan .caidan-nav>li.active>a, #caidan .caidan-nav>.active>a:focus, #caidan .caidan-nav>.active>a:hover {
+     color: #fff; 
+     background-color:  #094179;
+}
+#caidan .nav>li.active>a,#caidan .nav > li > a:hover, .nav > li > a:focus {
+    background-color:  #094179;
+}
+.navbar{
+    border:none;
+}
+.navbar-default {
+     background-color: #0C64BB; 
+ }
+
+
+
+/*³¬Ð¡ÆÁÏÔÊ¾*/
+    @media screen and (max-width:767px) {
+        #bs-example-navbar-collapse-1{
+            background-color: #0C64BB;
+            overflow: hidden;
+            min-height:10%;
+            position: absolute;
+            width: 110px;
+            z-index: 2;
+            right: 0px;
+            top: 50px;
+            color:#777;
+            border-radius: 5px;
+            margin-right: 1px;
+            text-align: center;
+        }
+        #header .navbar-right a{
+            line-height:1.5;
+            color: #fff;
+        }
+        #header .navbar-right a:hover{
+            background-color: #094179;
+        }
+        #footer-father>nav{
+            display: none;
+        }
+        #header .navbar-nav {
+            margin: 0 -15px;
+        }
+    }
+    /*Ð¡ÆÁÏÔÊ¾*/
+    @media screen and (max-width: 991px){
+        #header,#footer{
+            width:100%;
+        }
+        #footer2-inner{
+            width:100%;
+        }
+        #footer-father nav>div{
+            margin-right: -73px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width:990px){
+  #header .container-fluid{
+    width: 100% !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  #row2-main {
+    transition: all .5s linear;
+  }
+  #row2-main img {
+    transition: all .5s linear;
+  }
+  #row2-main img:hover {
+    transform: scale(1.1);
+    background: transparent;
+    border-color: transparent;
+  }
+  #row2-main + div:hover {
+    transform: translate(-30px);
+    cursor: pointer;
+  }
+  #row2-main + div p {
+    transition: all .3s linear;
+  }
+  #row2-main + div:hover p {
+    transform: scale(1.1);
+  }
+  #row2-main + div {
+    transition: all .3s linear;
+  }
+  #row2-main + div > div {
+    width: 45%;
+    line-height: 1.6rem;
+    background: #fff;
+    padding: 5px 20px 20px 25px;
+    margin-top: -300px;
+    margin-left: 462px;
+  }
+  #row2-main + div > div span {
+    position: relative;
+    top: 3px;
+    left: -29px;
+    color: #997F68;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+  transition: all .3s linear;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+span:hover {
+  cursor: pointer;
+}
+#row1-main {
+  color: #fff;
+  background: #AB0008;
+  padding: 0 5px 40px;
+  margin-top: 30px;
+  margin-bottom: -35px;
+}
+#row1-main img:hover {
+  transform: translatey(40px);
+}
+#row1-main div:last-child {
+  margin-top: 40px;
+  padding-left: 10px;
+  line-height: 2rem;
+  transition: all .3s linear;
+}
+#row1-main div:last-child:hover {
+  transform: scale(1.1);
+}
+#row1 {
+  background: url(../images/copy001bg5.jpg) 65px -30px;
+  margin-bottom: 100px;
+}
+#row1 > div {
+  padding-left: 40px;
+  padding-right: 55px;
+}
+#row1 img {
+  margin-top: -15px;
+}
+.row-head {
+  text-align: center;
+  font-weight: 800;
+  margin: 20px 0;
+}
+.row-head > p {
+  font-size: 20px;
+  color: rgb(164, 163, 163);
+}
+.row-head > h3 {
+  font-weight: 900;
+}
+.row-head > h3 span {
+  color: rgb(12, 101, 187);
+}
+#row2 {
+  padding-bottom: 45px;
+  background: url(../images/copy001bg4.jpg);
+}
+#row2 #row2-main:hover {
+  transform: translate(-80px);
+}
+#row2 .row-head > p {
+  color: #6C5428;
+}
+#row2 #row2-main + div > div {
+  line-height: 1.6rem;
+  background: #fff;
+  padding: 5px 20px 20px 25px;
+}
+#row2 #row2-main + div > div span {
+  position: relative;
+  top: 3px;
+  left: -29px;
+  color: #997F68;
+}
+#row3 {
+  margin-bottom: 30px;
+}
+#row3 img:hover {
+  transform: scale(1.1);
+}
+#row3 .row3-main-text:hover {
+  transform: scale(1.1);
+}
+#row3 .row3-main-text {
+  line-height: 2rem;
+  padding: 20px 15px 0;
+  transition: all .3s linear;
+}
+#row3 .row3-main-text p:last-child {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 15px;
+}
